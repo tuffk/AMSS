@@ -1,0 +1,65 @@
+﻿Compilación iniciada a las 26/08/2014 08:13:10 a.m..
+     1>Proyecto "C:\Users\Jaime\Dropbox\TEC\modelos\patron builder\patron builder\patron builder.vcxproj" en el nodo 2 (Build destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Alas.cpp Avion.cpp Builder.cpp Director.cpp Motor.cpp main.cpp
+         main.cpp
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(42): error C2143: error de sintaxis : falta ';' delante de '}'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(47): error C2143: error de sintaxis : falta ';' delante de '}'
+         Motor.cpp
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\motor.cpp(17): error C2511: 'Motor::Motor(int,int)' : la función miembro sobrecargada no se ha encontrado en 'Motor'
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\motor.h(3) : vea la declaración de 'Motor'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\motor.cpp(17): error C2550: 'Motor::{ctor}' : las listas de inicializadores de constructor sólo se permiten en las definiciones de constructor
+         Director.cpp
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(42): error C2143: error de sintaxis : falta ';' delante de '}'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(47): error C2143: error de sintaxis : falta ';' delante de '}'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(8): error C2259: Builder' : no se puede crear una instancia de una clase abstract
+                 debido a los siguientes miembros:
+                 'void Builder::setSerie(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(9) : vea la declaración de 'Builder::setSerie'
+                 'void Builder::setMarca(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(10) : vea la declaración de 'Builder::setMarca'
+                 'void Builder::setModelo(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(11) : vea la declaración de 'Builder::setModelo'
+                 'Motor *Builder::crearMotor(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(18) : vea la declaración de 'Builder::crearMotor'
+                 'Alas *Builder::crearAlas(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(19) : vea la declaración de 'Builder::crearAlas'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(14): error C2259: BuilderBoeing' : no se puede crear una instancia de una clase abstract
+                 debido a los siguientes miembros:
+                 'void Builder::setSerie(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(9) : vea la declaración de 'Builder::setSerie'
+                 'Motor *Builder::crearMotor(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(18) : vea la declaración de 'Builder::crearMotor'
+                 'Alas *Builder::crearAlas(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(19) : vea la declaración de 'Builder::crearAlas'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(14): error C2679: '=' binario : no se encontró un operador que adopte un operando en la parte derecha de tipo 'BuilderBoeing *' (o bien no existe una conversión aceptable)
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(20): puede ser 'Builder &Builder::operator =(const Builder &)'
+                 al hacer coincidir la lista de argumentos '(Builder, BuilderBoeing *)'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(17): error C2259: BuilderAirbus' : no se puede crear una instancia de una clase abstract
+                 debido a los siguientes miembros:
+                 'void Builder::setSerie(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(9) : vea la declaración de 'Builder::setSerie'
+                 'Motor *Builder::crearMotor(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(18) : vea la declaración de 'Builder::crearMotor'
+                 'Alas *Builder::crearAlas(void)' : es abstracto
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(19) : vea la declaración de 'Builder::crearAlas'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(17): error C2679: '=' binario : no se encontró un operador que adopte un operando en la parte derecha de tipo 'BuilderAirbus *' (o bien no existe una conversión aceptable)
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(20): puede ser 'Builder &Builder::operator =(const Builder &)'
+                 al hacer coincidir la lista de argumentos '(Builder, BuilderAirbus *)'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(19): error C2065: 'default' : identificador no declarado
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(19): error C2051: la expresión case no es una constante
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\director.cpp(20): error C2065: 'cout' : identificador no declarado
+         Builder.cpp
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(42): error C2143: error de sintaxis : falta ';' delante de '}'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(47): error C2143: error de sintaxis : falta ';' delante de '}'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.cpp(4): error C2509: 'crearAvion' : función miembro no declarada en 'BuilderAirbus'
+                 c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.h(22) : vea la declaración de 'BuilderAirbus'
+     1>c:\users\jaime\dropbox\tec\modelos\patron builder\patron builder\builder.cpp(4): fatal error C1903: no se puede recuperar de errores anteriores; se detiene la compilación
+         Avion.cpp
+         Alas.cpp
+         Generando código...
+     1>Compilación del proyecto terminada "C:\Users\Jaime\Dropbox\TEC\modelos\patron builder\patron builder\patron builder.vcxproj" (Build destinos) -- ERROR.
+
+ERROR al compilar.
+
+Tiempo transcurrido 00:00:01.65
